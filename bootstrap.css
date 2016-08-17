@@ -13,10 +13,10 @@ body {
   margin: 0;
 }
 
-ul {
+#cities ul {
   text-align:center;
 }
-ul li {
+#cities ul li {
   display: inline;
 }
 
