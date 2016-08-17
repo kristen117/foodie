@@ -30,7 +30,7 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
 
     <!-- Header -->
     <header id="top" class="header">
@@ -41,16 +41,37 @@
         	<div class="dropdown">
                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Pick your city
                 <span class="caret"></span></button>
-                <ul class="dropdown-menu" id="cities">
-				    <li><a href="#">New York City</a></li>
-				    <li><a href="#">Houton</a></li>
-				    <li><a href="#">Los Angeles</a></li>
-				    <li><a href="#">Boston</a></li>
-				    <li><a href="#">Philly</a></li>
+                <nav class="col-sm-12" id="myScrollspy">
+                <ul class="dropdown-menu" id="cities" class="nav nav-pills nav-stacked">
+				    <li><a href="#1">New York City</a></li>
+				    <li><a href="#2">Houton</a></li>
+				    <li><a href="#3">Los Angeles</a></li>
+				    <li><a href="#4">Boston</a></li>
+				    <li><a href="#5">Philly</a></li>
 				</ul>   
 			</div>
 		</div>
     </header>
+
+ <!--<div class="container">
+    <div class="row">
+      
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#1">New York City</a></li>
+          <li><a href="#2">Houston</a></li>
+          <li><a href="#3">Los Angeles</a></li>
+          <li><a href="#4">Boston</a></li>
+          <li><a href="#5">Philly</a></li>
+        </ul>
+      </nav>-->
+      <div class="dropdown" class="col-sm-9">
+        <div id="option"> 
+        
+        </div> 
+        ...
+      </div>
+    </div>
+  </div>*/
 
     <!-- About -->
     <section id="about" class="about">
