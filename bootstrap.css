@@ -18,11 +18,10 @@ body {
 }
 #cities ul li {
   display: inline;
-  vertical-align:middle;
 }
 }
 #cities{
-  left:50%;
+  left:41.5%;
 }
 article,
 aside,
