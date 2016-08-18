@@ -3623,6 +3623,10 @@ tbody.collapse.in {
   left: 0;
   z-index: 990;
 }
+.dropdown-menu>ul >li{
+  text-align: center;
+  display:inline;
+}
 .pull-right > .dropdown-menu {
   right: 0;
   left: auto;
