@@ -15,6 +15,7 @@ body {
 
 #cities ul {
   text-align:center;
+  vertical-align:middle;
 }
 #cities ul li {
   display: inline;
