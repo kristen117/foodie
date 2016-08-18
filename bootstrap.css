@@ -18,6 +18,8 @@ body {
 }
 #cities ul li {
   display: inline;
+  vertical-align:middle;
+}
 }
 #cities{
   left:50%;
