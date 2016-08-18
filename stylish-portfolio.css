@@ -249,3 +249,9 @@ footer {
   right: 5px;
 }
 
+.dropdown-menu ul{
+    text-align: center;
+}
+.dropdown-menu ul li{
+    display: inline;
+}
