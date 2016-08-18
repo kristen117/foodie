@@ -19,7 +19,9 @@ body {
 #cities ul li {
   display: inline;
 }
-
+#cities{
+  left:44%;
+}
 article,
 aside,
 details,
