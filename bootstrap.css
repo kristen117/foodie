@@ -3527,7 +3527,7 @@ tbody.collapse.in {
   position: absolute;
   top: 100%;
   left: 50%;
-  right: auto;
+  /*right: auto;*/
   z-index: 1000;
   display: none;
   float: left;
@@ -3536,7 +3536,7 @@ tbody.collapse.in {
   margin: 2px 0 0;
   font-size: 14px;
   text-align: center;
-  transform: translate(-50%, 0);
+  /*transform: translate(-50%, 0);*/
   list-style: none;
   background-color: #fff;
   -webkit-background-clip: padding-box;
