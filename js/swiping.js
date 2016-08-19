@@ -47,24 +47,64 @@ $(document).ready(function(){
 
 });
 
-$('body').on('click','.option li',function(){
+var dietary_restriction;
+
+$(".restrictions-menu li > a").click(function(e){
+  $('.restrictions-selection').text(this.innerHTML);
+  dietary_restriction = this.innerHTML;  
+
+});
+
+var cuisine_choice;
+
+$(".cuisine-menu li > a").click(function(e){
+	$('.cuisine-selection').text(this.innerHTML);
+	cuisine_choice = this.innerHTML;
+});
+
+var occasion_choice;
+
+$(".occasion-menu li > a").click(function(e){
+	$('.occasion-selection').text(this.innerHTML);
+	occasion_choice = this.innerHTML;
+});
+
+// Closes the sidebar menu
+$("#menu-close").click(function(e) {
+	e.preventDefault();
+	$("#sidebar-wrapper").toggleClass("active");
+});
+// Opens the sidebar menu
+$("#menu-toggle").click(function(e) {
+	e.preventDefault();
+	$("#sidebar-wrapper").toggleClass("active");
+});
+// Scrolls to the selected menu item on the page
+$(function() {
+	$('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+			if (target.length) {
+				$('html,body').animate({
+					scrollTop: target.offset().top
+				}, 1000);
+				return false;
+			}
+		}
+	});
+});
+
+//$('body').on('click','.option li',function(){
+function changeBackground(){	
 	var i = $(this).parents('.select').attr('id');
 	var v = $(this).children().text();
 	var o = $(this).attr('id');
 	$('#'+i+' .selected').attr('id',o);
 	$('#'+i+' .selected').text(v);
+	console.log(v);
   if (v=="New York City"){
   	document.body.style.backgroundImage = "url('http://www.ssn.tv/wp-content/uploads/2014/07/NYC-1.jpg')";
   }
-  else if (v=="Houston"){
-      document.body.style.backgroundImage = "url('https://upload.wikimedia.org/wikipedia/commons/d/de/Houston_night.jpg')";
-    }
-  else if (v=="Los Angeles"){
-      document.body.style.backgroundImage = "url('https://cdnx.jetcdn.com/static/images/destinations/los-angeles/bg3.jpg')";
-  }
-  else if (v=="Boston"){
-      document.body.style.backgroundImage = "url('http://cache.boston.com/bonzai-fba/Original_Photo/2006/01/10/1136915281_2365.jpg')";
-  else {
-      document.body.style.backgroundImage = "url('http://www.visitphilly.com/thumb.php?w=1000&zc=1&src=http://photos.visitphilly.com/2014_CV_LOVE_PanoramaView-1400VP.jpg')";
-  }
-});
+  console.log(v);
+}//);
