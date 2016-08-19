@@ -45,3 +45,14 @@ $(function() {
 		}
 	});
 });
+
+$('body').on('click','.option li',function(){
+	var i = $(this).parents('.select').attr('id');
+	var v = $(this).children().text();
+	var o = $(this).attr('id');
+	$('#'+i+' .selected').attr('id',o);
+	$('#'+i+' .selected').text(v);
+  if (v=="New York City"){
+  	document.body.style.backgroundImage = "url('http://www.ssn.tv/wp-content/uploads/2014/07/NYC-1.jpg')";
+  }
+});
