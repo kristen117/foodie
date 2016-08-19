@@ -13,6 +13,13 @@ $(".cuisine-menu li > a").click(function(e){
 	cuisine_choice = this.innerHTML;
 });
 
+var occasion_choice;
+
+$(".occasion-menu li > a").click(function(e){
+	$('.occasion-selection').text(this.innerHTML);
+	occasion_choice = this.innerHTML;
+});
+
 // Closes the sidebar menu
 $("#menu-close").click(function(e) {
 	e.preventDefault();
